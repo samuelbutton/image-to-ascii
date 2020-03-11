@@ -44,7 +44,7 @@ all: asciiart
 asciiart: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++ -L/usr/local/lib -o "asciiart" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "asciiart" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
